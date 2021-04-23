@@ -368,17 +368,9 @@ public class CraftRecipe extends JavaPlugin implements Listener {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player) sender;
         if(cmd.getName().equalsIgnoreCase("createrecipe")) {
-//            if(!p.isOp()) {
-//                p.sendMessage("§c당신은 OP 권한이 없습니다!");
-//                return false;
-//            }
             MakeRecipe(p);
         }
         else if(cmd.getName().equalsIgnoreCase("recipelist")) {
-//            if(!p.isOp()) {
-//                p.sendMessage("§c당신은 OP 권한이 없습니다!");
-//                return false;
-//            }
             ListPage = 1;
             RecipeList(p, 1);
         }
