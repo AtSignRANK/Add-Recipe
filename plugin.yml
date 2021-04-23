@@ -1,0 +1,9 @@
+main: io.github.craftrecipe.CraftRecipe
+name: Craft-Recipe
+version: 1.16.5
+api-version: 1.16
+commands:
+  createrecipe:
+    permission: op
+  recipelist:
+    permission: op
