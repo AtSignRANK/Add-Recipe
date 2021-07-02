@@ -1,20 +1,3 @@
-#name: Party
-#main: io.github.plugin.party.PartyMain
-#version: 1.16.5
-#api-version: 1.16
-#author: RANK0816
-#commands:
-#  party:
-#    aliases:
-#      - p
-#  partychat:
-#    aliases:
-#      - pchat
-#      - pc
-#  chat:
-#    aliases:
-#      - ch
-
 name: AddRecipe
 main: io.github.plugin.addrecipe.AddRecipe
 version: 1.16
