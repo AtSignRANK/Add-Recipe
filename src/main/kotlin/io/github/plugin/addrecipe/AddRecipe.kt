@@ -53,7 +53,17 @@ class AddRecipe: JavaPlugin() {
             serverconfig.set("number", 0)
         }
         for (i in 0..(number - 1)) {
-            .
+            val shapedrecipe = ShapedRecipe(NamespacedKey(plugin, NamespacedKey.MINECRAFT),
+                    inventory.getItem(plugin.addrecipeclickable[9])!!)
+                shapedrecipe.shape("abc","def","ghi").setIngredient('a', )
+                    .setIngredient('b', )
+                    .setIngredient('c', )
+                    .setIngredient('d', )
+                    .setIngredient('e', )
+                    .setIngredient('f', )
+                    .setIngredient('g', )
+                    .setIngredient('h', )
+                    .setIngredient('i', )
         }
     }
 
