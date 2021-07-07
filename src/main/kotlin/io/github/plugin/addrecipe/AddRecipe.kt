@@ -51,6 +51,7 @@ class AddRecipe: JavaPlugin() {
         if (!serverconfig.isSet("number")) {
             serverconfig.set("number", 0)
         }
+        for (i in 0..(number - 1))
     }
 
     fun getIntInString(string: String, front: String, min: Int, max: Int): Int {
@@ -83,5 +84,9 @@ class AddRecipe: JavaPlugin() {
             newInventory.setItem(15, serverconfig.getItemStack("$number.item"))
         }
         return newInventory
+    }
+
+    fun recipe_delete_restore(number: Int, bool: Boolean) {
+        serverconfig.set("${number}.delete", bool)
     }
 }
