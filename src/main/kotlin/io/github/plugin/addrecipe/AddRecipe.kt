@@ -45,6 +45,7 @@ class AddRecipe: JavaPlugin() {
 
     override fun onEnable() {
         server.pluginManager.registerEvents(AddRecipeListener(this), this)
+        server.pluginManager.registerEvents(RecipeListListener(this), this)
         server.getPluginCommand("addrecipe")?.setExecutor(RecipeCommand(this))
         server.getPluginCommand("recipelist")?.setExecutor(RecipeCommand(this))
         loadConfig()
