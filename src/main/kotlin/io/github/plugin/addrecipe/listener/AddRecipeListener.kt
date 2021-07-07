@@ -90,16 +90,6 @@ class AddRecipeListener(private val plugin: AddRecipe): Listener {
                 event.isCancelled = true
                 return
             }
-        } else if (event.view.title() == plugin.recipelist) {
-            if (plugin.recipelistclicknotable.contains(event.slot)) {
-                if (event.slot == 45) {
-                    val page = plugin.getIntInString(inventory.getItem(47)?.displayName()?.insertion()!!,
-                        "${ChatColor.GREEN}현재 페이지 : ", 1, 10)
-                    val number = (page - 1) * 45 + event.slot
-                    val newInventory = plugin.getRecipe(number)
-                    player.openInventory(newInventory)
-                }
-            }
         }
     }
 }
