@@ -51,7 +51,9 @@ class AddRecipe: JavaPlugin() {
         if (!serverconfig.isSet("number")) {
             serverconfig.set("number", 0)
         }
-        for (i in 0..(number - 1))
+        for (i in 0..(number - 1)) {
+            .
+        }
     }
 
     fun getIntInString(string: String, front: String, min: Int, max: Int): Int {
@@ -78,7 +80,7 @@ class AddRecipe: JavaPlugin() {
             }
             newInventory.setItem(15, serverconfig.getItemStack("$number.item"))
         } else {
-            for (i in 1 until (addrecipeclickable.size)) {
+            for (ㅑdrecipeclickable.size)) {
                 newInventory.setItem(addrecipeclickable[i], ItemStack(serverconfig.get("$number.$i") as Material))
             }
             newInventory.setItem(15, serverconfig.getItemStack("$number.item"))
