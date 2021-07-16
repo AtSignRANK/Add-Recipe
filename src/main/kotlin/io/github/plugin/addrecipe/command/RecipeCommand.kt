@@ -34,6 +34,11 @@ class RecipeCommand(private val plugin: AddRecipe): CommandExecutor {
                 meta.displayName(Component.text("${ChatColor.GREEN}Add Material Recipe"))
                 complete.itemMeta = meta
                 inventory.setItem(8, complete)
+                sender.openInventory(inventory)
+            }
+
+            "recipelist" -> {
+                sender.openInventory(plugin.recipeList(1))
             }
         }
         return false
